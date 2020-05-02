@@ -1,0 +1,126 @@
+Node JS —— Node itself is written C++, V8 engine converts JS code into C++ code ————
+
+Command Line interface
+	Type commands in your computer rather than clicking with mouse
+
+Arguments 	Values you give your program that effect how it runs
+
+Javascript engine converts JS code into processor’s understandable language.
+
+Javascript code ——> V8 Engine ——> machine code  we can also embed V8 in our own C++ programme  Servers and clients 
+————————— Node Js is server technology
+Server is a computer that performs services
+Clients asks for services.
+
+
+The main goal of nodeJs is we can write server side and client side can be of one programming language instead of multiple languages like Java, c#, etc 
+
+What does JS needs to manage a server:
+	1. Ways to deal with Files 	2. Ways to deal with Databases 	3. Ability to communicate over internet 	4. Ability to accept and send responses.
+	5. Ways to deal with works which takes much time.
+
+
+Foundational Elements of Node is  	1. Modules — A Reusable block of code who existence does not impact other code.
+	2. Exports
+	3. Require
+
+
+Node JS implements CommonJS Modules
+CommonJS modules are an agreed upon standard for how code modules should be structured.
+
+Require here used to import the modules into a file  module.exports will help if at all you want to use certain functions of module, it is where module allows to make it available for other files or code
+ 
+
+What is primitive datatypes 
+	It is the type of data which represents single value.
+
+
+Immediately Invoked Function Expression (IIFE) — these have the same intention as the module which never effects the other code and also will be executed as soon as it is declared
+
+
+
+How do Module.exports and require works ?
+Require is a function where you pass the path 
+Module.exports is what require function returns  Use module.exports not exports even though it is shorthand
+
+
+
+NODE PACKAGE MANAGER
+-------------------------
+semantic versioning
+---- it is required to know the changes occured in which version so that it will be easier to track the changes 
+semantic here means which means something
+
+
+for example 
+	MAJOR.MINOR.PATCH
+	1.7.2
+
+
+
+Express
+--------------
+Express made webserver to build easier, which is one of popular package.
+It is a middleware application which lies between request and responses.
+
+it is unopinionated which means they are lots of choices
+
+
+Template Engine in express translate the text into Html ultimately.
+
+Jade is one of the popular package for this 
+EJS - Effective Javascript templating.
+
+
+
+
+REST api
+----------------
+REST ---- Representational State Transfer
+
+it is following good Url Structure like 
+
+		//get 
+		app.get('/api/person/:id', (req, res) => {
+			//get from database
+		})
+
+		//post
+		app.post('/api/person', (req, res) => {
+			//save to database
+		})
+
+		//delete 
+		app.delete('/api/person/:id', (req, res) => {
+			//delete from database
+		})
+
+
+
+App Structuring
+-----------------
+normally express generator will help the app to be in a particular structured
+
+
+Javascript, JSON, Databases
+----------------------------
+Javascipt stores the information in Array of objects 
+MySql has good options to use it in node -- open source 
+	it is written in javascript and driven by node js 
+	so need of any compilation here.
+
+Nosql is non structured.
+
+
+
+MEAN Stack 
+-----------------
+Stack ---- It is a piece of software which is build by combining the technologies.
+
+MongoDb, Mongoose
+Express
+Angular 
+Nodejs 
+
+
+
